@@ -1,0 +1,161 @@
+:root{
+    --main-color:rgb(255, 208, 0);
+    --active-color:rgb(157, 255, 66);
+}
+::-moz-selection {
+    background:rgba(0, 0, 0, 0);
+  }
+  
+  ::selection {
+    background: rgba(0, 0, 0, 0);
+  }
+::-webkit-scrollbar {
+    height: 0.5em;
+    width: 0.5em;
+    background-color: rgb(0, 0, 0)
+}
+  
+::-webkit-scrollbar-thumb {
+    background: orange;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--main-color);  
+}
+body{
+    transition: 0.5s;
+    user-select: none;
+    font-family:cursive;
+    background-image:linear-gradient(
+        115deg,
+        rgba(255, 166, 0, 0.479),
+        rgba(255, 208, 0, 0.24)
+      ),
+      url(background.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+}
+
+nav{
+    z-index: 1;
+    margin: auto;
+    width: 99%;
+    position: fixed;
+    top: 0.1em;
+    height: 4em;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.952);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+nav div{
+    text-align: center;
+    color:var(--main-color);
+    color: orange;
+    line-height: 2em;
+    font-size: 1.6em;
+}
+nav div:hover{
+    transition: 0.25s;     
+    cursor: pointer;
+    color:var(--main-color);
+    border-bottom: 0.25em solid var(--main-color) ;
+}
+
+span{
+    font-size: 0.4em;
+}
+.active{
+    color: var(--active-color);
+    border-bottom:0.25em solid var(--active-color) ;
+}
+.active:hover{
+    color: var(--active-color);
+    border-bottom-color:var(--active-color) ;
+}
+#restaurant-name{
+    text-align: left;
+    padding-left: 1em;
+    margin: auto;
+    width: 100%;
+    font-size: 2em;
+}
+#restaurant-name a{
+    color: inherit;
+    text-decoration: none;
+}
+#restaurant-name:hover{
+    cursor:default;
+    color:var(--main-color);
+    border: 0em;
+}
+
+main{
+    text-align: center;
+    border-radius: 5px;
+    color: orange;      
+    font-size: 3em;
+    padding: 0.75em;
+    margin: auto;
+    margin-top: 2em;
+    width: 70%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.63);
+}
+
+#home-content h{
+    font-size: 2.5em;
+}
+
+#home-content li{
+    text-align: left;
+}
+
+#menu-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.food-card{
+    transition: 0.5s;
+    margin:0.5em auto;
+    width: 6em;
+    height:6em;
+}
+
+.food-card:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+    color: aliceblue;
+}
+
+#menu-content img{
+    border-radius: 20px;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+
+#contact-content li{
+    margin: 1.5em auto;
+    text-align: left;
+    font-size: 1em;
+}
+
+#contact-content li{
+    margin: 1.5em auto;
+    text-align: left;
+    font-size: 1em;
+}
+#contact-content a{
+    transition: 0.5s;
+    color: rgb(255, 230, 177);
+}
+#contact-content a:hover{
+    color:rgb(255, 230, 0);
+}
